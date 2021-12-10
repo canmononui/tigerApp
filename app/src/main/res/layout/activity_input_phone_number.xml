@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".input_phone_number"
+    android:background="@color/yellow" >
+    <!-- BACK IMAGE ICON -->
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginStart="15dp"
+        android:src="@drawable/backicon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:clickable="true" />
+    <!-- OWNER NAME -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/kanit_medium"
+        android:text="WAT PHRA KAEW"
+        android:textColor="#20232A"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <!-- OWNER IMAGE -->
+    <ImageView
+        android:id="@+id/ownerImg"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:src="@drawable/ownerprofileicon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <!-- DOT USER OWNER STATUS -->
+    <View
+        android:id="@+id/status"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/dot_status_online"
+        app:layout_constraintStart_toStartOf="@+id/ownerImg"
+        app:layout_constraintTop_toTopOf="@+id/ownerImg" />
+
+    <!-- BG WHITE -->
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="705dp"
+        android:background="@drawable/bg_white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="57dp" />
+    <TextView
+        android:id="@+id/textTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/kanit_medium"
+        android:text="ขอเชิญร่วมทำบุญครั้งยิ่งใหญ่"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view" />
+
+    <EditText
+        android:id="@+id/phoneNumberInput"
+        android:background="@drawable/bg_input_gray"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/textTop"
+        android:ems="10"
+        android:drawableStart="@drawable/phoneicon"
+        android:drawablePadding="15dp"
+        android:hint="เบอร์โทรศัพท์"
+        android:fontFamily="@font/kanit_medium"
+        android:textColor="@color/black"
+        android:inputType="number"
+        android:textSize="20dp" />
+
+    <!-- SKIP BUTTON -->
+    <Button
+        android:id="@+id/buttonSkip"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/bg_button_white"
+        android:fontFamily="@font/kanit_medium"
+        android:padding="10dp"
+        android:text="ข้าม"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phoneNumberInput"
+        android:stateListAnimator="@null" />
+
+    <!-- SUBMIT BUTTON -->
+    <Button
+        android:id="@+id/buttonSubmit"
+        android:layout_width="335dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/bg_button_yellow"
+        android:fontFamily="@font/kanit_medium"
+        android:padding="10dp"
+        android:text="ยืนยัน"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phoneNumberInput"
+        android:stateListAnimator="@null" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

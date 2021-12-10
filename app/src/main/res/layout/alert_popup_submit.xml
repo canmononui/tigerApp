@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/moneyTotal"
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:background="@drawable/bg_alert_yellow"
+        android:padding="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- TOP TEXT -->
+        <TextView
+            android:id="@+id/textTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/kanit_medium"
+            android:text="โปรดตรวจสอบข้อมูล"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <!-- TEXT NOTE MENU -->
+        <LinearLayout
+            android:id="@+id/layoutNoteMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textTop"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <!-- IMAGE -->
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/noteicon" />
+            <!-- TEXT -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/kanit_medium"
+                android:text="ร่วมทำบุญ : "
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+            <!-- TEXT MENU SELECT -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/kanit_medium"
+                android:text="ทำบุญสร้างพระวิหาร"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <!-- TEXT SUM -->
+        <LinearLayout
+            android:id="@+id/layoutSum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layoutNoteMenu"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <!-- IMAGE -->
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/thbicon" />
+            <!-- TEXT -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/kanit_medium"
+                android:text="ยอดเงิน : ฿"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+            <!-- TEXT MENU SELECT -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/kanit_medium"
+                android:text="1,500"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/buttonCancelAlert"
+            android:layout_marginBottom="0dp"
+            android:fontFamily="@font/kanit_medium"
+            android:text="*โปรดตรวจสอบความถูกต้องของข้อมูล"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <!-- CANCEL BUTTON -->
+        <Button
+            android:id="@+id/buttonCancelAlert"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/bg_button_yellow_alert"
+            android:fontFamily="@font/kanit_medium"
+            android:padding="10dp"
+            android:text="ยกเลิก"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:stateListAnimator="@null" />
+
+        <!-- SUBMIT BUTTON -->
+        <Button
+            android:id="@+id/buttonSubmitAlert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="0dp"
+            android:layout_toEndOf="@+id/buttonCancelAlert"
+            android:background="@drawable/bg_button_white_alert"
+            android:fontFamily="@font/kanit_medium"
+            android:padding="10dp"
+            android:text="ยืนยัน"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:stateListAnimator="@null" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

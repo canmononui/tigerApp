@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:background="@color/yellow" >
+
     <!-- OWNER NAME -->
     <TextView
         android:id="@+id/textView"
@@ -15,10 +16,11 @@
         android:fontFamily="@font/kanit_medium"
         android:text="WAT PHRA KAEW"
         android:textColor="@color/black"
-        android:textSize="20sp"
+        android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
     <!-- OWNER IMAGE -->
     <ImageView
         android:id="@+id/ownerImg"
@@ -29,6 +31,7 @@
         android:src="@drawable/ownerprofileicon"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
     <!-- DOT USER OWNER STATUS -->
     <View
         android:id="@+id/status"
@@ -39,368 +42,383 @@
         android:background="@drawable/dot_status_online"
         app:layout_constraintStart_toStartOf="@+id/ownerImg"
         app:layout_constraintTop_toTopOf="@+id/ownerImg" />
+
     <!-- BG WHITE -->
     <View
         android:id="@+id/view"
         android:layout_width="match_parent"
-        android:layout_height="705dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:background="@drawable/bg_white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="57dp" />
+        app:layout_constraintTop_toBottomOf="@+id/ownerImg" />
 
     <!-- ROW BUTTON 1 -->
     <LinearLayout
         android:id="@+id/buttonMenuRow1"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_marginStart="20dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="@+id/view"
         android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:background="@drawable/bg_button_yellow"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/view"
-        android:clickable="true" >
-        <!-- IMG MENU -->
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp" >
+        <!-- IMAGE MENU -->
         <ImageView
-            android:id="@+id/imgMenu1"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="100dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="20dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:src="@drawable/temple" />
         <!-- TEXT MENU -->
         <TextView
-            android:id="@+id/button1_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="60dp"
-            android:layout_marginTop="37dp"
-            android:layout_toEndOf="@+id/imgMenu1"
             android:fontFamily="@font/kanit_medium"
+            android:text="ทำบุญสร้างพระวิหาร"
             android:textColor="@color/black"
-            android:textSize="20dp"
-            android:text="ทำบุญสร้างพระวิหาร"/>
+            android:textSize="25dp"
+            android:layout_marginStart="50dp" />
     </LinearLayout>
+    <!-- END ROW BUTTON 1 -->
 
     <!-- ROW BUTTON 2 -->
-    <RelativeLayout
+    <LinearLayout
         android:id="@+id/buttonMenuRow2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/buttonMenuRow1"
-        android:layout_marginStart="20dp"
+        android:gravity="center"
+        android:weightSum="100"
         android:layout_marginTop="20dp"
-        android:layout_marginEnd="20dp" >
-        <!-- COL 1 - MENU 2 -->
-        <RelativeLayout
-            android:id="@+id/buttonMenu2"
-            android:layout_width="235dp"
-            android:layout_height="100dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/buttonMenuRow1">
+
+        <!-- BUTTON 2 -->
+        <LinearLayout
+            android:id="@+id/layoutButtonMenu2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
             android:background="@drawable/bg_button_yellow"
-            android:clickable="true"
-            app:layout_constraintStart_toStartOf="parent">
-            <!-- IMG MENU -->
+            android:gravity="center"
+            android:paddingStart="40dp"
+            android:paddingTop="20dp"
+            android:paddingEnd="40dp"
+            android:paddingBottom="20dp" >
+            <!-- IMAGE MENU -->
             <ImageView
-                android:id="@+id/imgMenu2"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="20dp"
+                android:id="@+id/menu2Img"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:src="@drawable/temple" />
-            <!-- TEXT MENU 1 -->
-            <TextView
-                android:id="@+id/button2_text1"
-                android:layout_width="wrap_content"
+            <!-- TEXT MENU -->
+            <LinearLayout
+                android:id="@+id/layoutTextMenu2"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-                android:layout_marginTop="25dp"
-                android:layout_marginEnd="30dp"
-                android:fontFamily="@font/kanit_medium"
-                android:textColor="@color/black"
-                android:textSize="15dp"
-                android:text="ทำบุญ" />
-            <!-- TEXT MENU 2 -->
-            <TextView
-                android:id="@+id/button2_text2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/button2_text1"
-                android:layout_alignParentEnd="true"
-                android:layout_marginEnd="30dp"
-                android:fontFamily="@font/kanit_medium"
-                android:textColor="@color/black"
-                android:textSize="20dp"
-                android:text="การศึกษา" />
-        </RelativeLayout>
-        <!-- COL 2 - MENU 3 -->
-        <RelativeLayout
-            android:id="@+id/buttonMenu3"
-            android:layout_width="235dp"
-            android:layout_height="100dp"
-            android:layout_alignParentEnd="true"
-            android:layout_marginEnd="0dp"
+                android:gravity="end"
+                android:orientation="vertical">
+                <!-- TEXT MENU 1 -->
+                <TextView
+                    android:id="@+id/menu2Text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/kanit_medium"
+                    android:text="ทำบุญ"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+                <!-- TEXT MENU 2 -->
+                <TextView
+                    android:id="@+id/menu2Text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/kanit_medium"
+                    android:text="การศึกษา"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+            </LinearLayout>
+            <!-- END TEXT MENU -->
+        </LinearLayout>
+        <!-- END BUTTON 2 -->
+
+        <!-- BUTTON 3 -->
+        <LinearLayout
+            android:id="@+id/layoutButtonMenu3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
             android:background="@drawable/bg_button_yellow"
-            android:clickable="true" >
-            <!-- IMG MENU -->
+            android:gravity="center"
+            android:paddingStart="40dp"
+            android:paddingTop="20dp"
+            android:paddingEnd="40dp"
+            android:paddingBottom="20dp"
+            android:layout_marginStart="20dp">
+            <!-- IMAGE MENU -->
             <ImageView
-                android:id="@+id/imgMenu3"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="20dp"
+                android:id="@+id/menu3Img"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:src="@drawable/temple" />
-            <!-- TEXT MENU 1 -->
-            <TextView
-                android:id="@+id/button3_text1"
-                android:layout_width="wrap_content"
+            <!-- TEXT MENU -->
+            <LinearLayout
+                android:id="@+id/layoutTextMenu3"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-                android:layout_marginTop="25dp"
-                android:layout_marginEnd="30dp"
-                android:fontFamily="@font/kanit_medium"
-                android:textColor="@color/black"
-                android:textSize="15dp"
-                android:text="ทำบุญ" />
-            <!-- TEXT MENU 2 -->
-            <TextView
-                android:id="@+id/button3_text2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/button3_text1"
-                android:layout_alignParentEnd="true"
-                android:layout_marginEnd="30dp"
-                android:fontFamily="@font/kanit_medium"
-                android:textColor="@color/black"
-                android:textSize="20dp"
-                android:text="ค่าน้ำค่าไฟ" />
-        </RelativeLayout>
-    </RelativeLayout>
+                android:gravity="end"
+                android:orientation="vertical">
+                <!-- TEXT MENU 1 -->
+                <TextView
+                    android:id="@+id/menu3Text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/kanit_medium"
+                    android:text="ทำบุญ"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+                <!-- TEXT MENU 2 -->
+                <TextView
+                    android:id="@+id/menu3Text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/kanit_medium"
+                    android:text="ค่าน้ำค่าไฟ"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+            </LinearLayout>
+            <!-- END TEXT MENU -->
+        </LinearLayout>
+        <!-- END BUTTON 2 -->
+    </LinearLayout>
+    <!-- END ROW BUTTON 2 -->
 
     <!-- ROW BUTTON 3 -->
-    <RelativeLayout
+    <LinearLayout
         android:id="@+id/buttonMenuRow3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/buttonMenuRow2"
-        android:layout_marginStart="20dp"
+        android:gravity="center"
+        android:weightSum="100"
         android:layout_marginTop="20dp"
-        android:layout_marginEnd="20dp" >
-        <!-- COL 1 - MENU 2 -->
-        <RelativeLayout
-            android:id="@+id/buttonMenu4"
-            android:layout_width="235dp"
-            android:layout_height="100dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/buttonMenuRow2">
+
+        <!-- BUTTON 4 -->
+        <LinearLayout
+            android:id="@+id/layoutButtonMenu4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
             android:background="@drawable/bg_button_yellow"
-            android:clickable="true"
-            app:layout_constraintStart_toStartOf="parent">
-            <!-- IMG MENU -->
+            android:gravity="center"
+            android:paddingStart="40dp"
+            android:paddingTop="20dp"
+            android:paddingEnd="40dp"
+            android:paddingBottom="20dp" >
+            <!-- IMAGE MENU -->
             <ImageView
-                android:id="@+id/imgMenu4"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="20dp"
+                android:id="@+id/menu4Img"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:src="@drawable/temple" />
-            <!-- TEXT MENU 1 -->
-            <TextView
-                android:id="@+id/button4_text1"
-                android:layout_width="wrap_content"
+            <!-- TEXT MENU -->
+            <LinearLayout
+                android:id="@+id/layoutTextMenu4"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-                android:layout_marginTop="25dp"
-                android:layout_marginEnd="30dp"
-                android:fontFamily="@font/kanit_medium"
-                android:textColor="@color/black"
-                android:textSize="15dp"
-                android:text="ทำบุญ" />
-            <!-- TEXT MENU 2 -->
-            <TextView
-                android:id="@+id/button4_text2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/button4_text1"
-                android:layout_alignParentEnd="true"
-                android:layout_marginEnd="30dp"
-                android:fontFamily="@font/kanit_medium"
-                android:textColor="@color/black"
-                android:textSize="20dp"
-                android:text="โรงศพ" />
-        </RelativeLayout>
-        <!-- COL 2 - MENU 3 -->
-        <RelativeLayout
-            android:id="@+id/buttonMenu5"
-            android:layout_width="235dp"
-            android:layout_height="100dp"
-            android:layout_alignParentEnd="true"
-            android:layout_marginEnd="0dp"
+                android:gravity="end"
+                android:orientation="vertical">
+                <!-- TEXT MENU 1 -->
+                <TextView
+                    android:id="@+id/menu4Text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/kanit_medium"
+                    android:text="ทำบุญ"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+                <!-- TEXT MENU 2 -->
+                <TextView
+                    android:id="@+id/menu4Text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/kanit_medium"
+                    android:text="โรงศพ"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+            </LinearLayout>
+            <!-- END TEXT MENU -->
+        </LinearLayout>
+        <!-- END BUTTON 4 -->
+
+        <!-- BUTTON 5 -->
+        <LinearLayout
+            android:id="@+id/layoutButtonMenu5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
             android:background="@drawable/bg_button_yellow"
-            android:clickable="true" >
-            <!-- IMG MENU -->
+            android:gravity="center"
+            android:paddingStart="40dp"
+            android:paddingTop="20dp"
+            android:paddingEnd="40dp"
+            android:paddingBottom="20dp"
+            android:layout_marginStart="20dp">
+            <!-- IMAGE MENU -->
             <ImageView
-                android:id="@+id/imgMenu5"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="20dp"
+                android:id="@+id/menu5Img"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:src="@drawable/temple" />
-            <!-- TEXT MENU 1 -->
-            <TextView
-                android:id="@+id/button5_text1"
-                android:layout_width="wrap_content"
+            <!-- TEXT MENU -->
+            <LinearLayout
+                android:id="@+id/layoutTextMenu5"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-                android:layout_marginTop="25dp"
-                android:layout_marginEnd="30dp"
-                android:fontFamily="@font/kanit_medium"
-                android:textColor="@color/black"
-                android:textSize="15dp"
-                android:text="ทำบุญ" />
-            <!-- TEXT MENU 2 -->
-            <TextView
-                android:id="@+id/button5_text2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/button5_text1"
-                android:layout_alignParentEnd="true"
-                android:layout_marginEnd="30dp"
-                android:fontFamily="@font/kanit_medium"
-                android:textColor="@color/black"
-                android:textSize="15dp"
-                android:text="เจ้ากรรมนายเวร" />
-        </RelativeLayout>
-    </RelativeLayout>
+                android:gravity="end"
+                android:orientation="vertical">
+                <!-- TEXT MENU 1 -->
+                <TextView
+                    android:id="@+id/menu5Text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/kanit_medium"
+                    android:text="ทำบุญ"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+                <!-- TEXT MENU 2 -->
+                <TextView
+                    android:id="@+id/menu5Text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/kanit_medium"
+                    android:text="เจ้ากรรมนายเวร"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+            </LinearLayout>
+            <!-- END TEXT MENU -->
+        </LinearLayout>
+        <!-- END BUTTON 5 -->
+    </LinearLayout>
+    <!-- END ROW BUTTON 3 -->
+
+    <!--     / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / /-->
 
     <!-- ROW BUTTON 4 -->
-    <RelativeLayout
-        android:id="@+id/buttonMenuRow4"
+    <LinearLayout
+        android:id="@+id/buttonMenuRow6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/buttonMenuRow3"
-        android:layout_marginStart="20dp"
+        android:gravity="center"
+        android:weightSum="100"
         android:layout_marginTop="20dp"
-        android:layout_marginEnd="20dp" >
-        <!-- COL 1 - MENU 2 -->
-        <RelativeLayout
-            android:id="@+id/buttonMenu6"
-            android:layout_width="235dp"
-            android:layout_height="100dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/buttonMenuRow3">
+
+        <!-- BUTTON 6 -->
+        <LinearLayout
+            android:id="@+id/layoutButtonMenu6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
             android:background="@drawable/bg_button_yellow"
-            android:clickable="true"
-            app:layout_constraintStart_toStartOf="parent">
-            <!-- IMG MENU -->
+            android:gravity="center"
+            android:paddingStart="40dp"
+            android:paddingTop="20dp"
+            android:paddingEnd="40dp"
+            android:paddingBottom="20dp" >
+            <!-- IMAGE MENU -->
             <ImageView
-                android:id="@+id/imgMenu6"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="20dp"
+                android:id="@+id/menu6Img"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:src="@drawable/temple" />
-            <!-- TEXT MENU 1 -->
-            <TextView
-                android:id="@+id/button6_text1"
-                android:layout_width="wrap_content"
+            <!-- TEXT MENU -->
+            <LinearLayout
+                android:id="@+id/layoutTextMenu6"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-                android:layout_marginTop="25dp"
-                android:layout_marginEnd="30dp"
-                android:fontFamily="@font/kanit_medium"
-                android:text="ทำบุญบิดา"
-                android:textColor="@color/black"
-                android:textSize="15dp" />
-            <!-- TEXT MENU 2 -->
-            <TextView
-                android:id="@+id/button6_text2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/button6_text1"
-                android:layout_alignParentEnd="true"
-                android:layout_marginEnd="30dp"
-                android:fontFamily="@font/kanit_medium"
-                android:text="มารดาผู้มีพระคุณ"
-                android:textColor="@color/black"
-                android:textSize="15dp" />
-        </RelativeLayout>
-        <!-- COL 2 - MENU 3 -->
-        <RelativeLayout
-            android:id="@+id/buttonMenu7"
-            android:layout_width="235dp"
-            android:layout_height="100dp"
-            android:layout_alignParentEnd="true"
-            android:layout_marginEnd="0dp"
+                android:gravity="end"
+                android:orientation="vertical">
+                <!-- TEXT MENU 1 -->
+                <TextView
+                    android:id="@+id/menu6Text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/kanit_medium"
+                    android:text="ทำบุญ"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+                <!-- TEXT MENU 2 -->
+                <TextView
+                    android:id="@+id/menu6Text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/kanit_medium"
+                    android:text="บิดามารดาผู้มีพระคุณ"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+            </LinearLayout>
+            <!-- END TEXT MENU -->
+        </LinearLayout>
+        <!-- END BUTTON 6 -->
+
+        <!-- BUTTON 7 -->
+        <LinearLayout
+            android:id="@+id/layoutButtonMenu7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
             android:background="@drawable/bg_button_yellow"
-            android:clickable="true" >
-            <!-- IMG MENU -->
+            android:gravity="center"
+            android:paddingStart="40dp"
+            android:paddingTop="20dp"
+            android:paddingEnd="40dp"
+            android:paddingBottom="20dp"
+            android:layout_marginStart="20dp">
+            <!-- IMAGE MENU -->
             <ImageView
-                android:id="@+id/imgMenu7"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="20dp"
+                android:id="@+id/menu7Img"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:src="@drawable/temple" />
-            <!-- TEXT MENU 1 -->
-            <TextView
-                android:id="@+id/button7_text1"
-                android:layout_width="wrap_content"
+            <!-- TEXT MENU -->
+            <LinearLayout
+                android:id="@+id/layoutTextMenu7"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-                android:layout_marginTop="25dp"
-                android:layout_marginEnd="30dp"
-                android:fontFamily="@font/kanit_medium"
-                android:textColor="@color/black"
-                android:textSize="15dp"
-                android:text="ทำบุญ" />
-            <!-- TEXT MENU 2 -->
-            <TextView
-                android:id="@+id/button7_text2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/button7_text1"
-                android:layout_alignParentEnd="true"
-                android:layout_marginEnd="30dp"
-                android:fontFamily="@font/kanit_medium"
-                android:textColor="@color/black"
-                android:textSize="15dp"
-                android:text="เทวดาประจำตัว" />
-        </RelativeLayout>
-    </RelativeLayout>
-
-
-
+                android:gravity="end"
+                android:orientation="vertical">
+                <!-- TEXT MENU 1 -->
+                <TextView
+                    android:id="@+id/menu7Text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/kanit_medium"
+                    android:text="ทำบุญ"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+                <!-- TEXT MENU 2 -->
+                <TextView
+                    android:id="@+id/menu7Text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/kanit_medium"
+                    android:text="ทำบุญเทวดาประจำตัว"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+            </LinearLayout>
+            <!-- END TEXT MENU -->
+        </LinearLayout>
+        <!-- END BUTTON 7 -->
+    </LinearLayout>
+    <!-- END ROW BUTTON 4 -->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

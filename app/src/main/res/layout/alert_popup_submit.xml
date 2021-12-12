@@ -5,10 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
+    <!-- LAYOUT ALERT POPUP -->
     <RelativeLayout
         android:id="@+id/moneyTotal"
         android:layout_width="match_parent"
-        android:layout_height="550dp"
+        android:layout_height="800dp"
         android:background="@drawable/bg_alert_yellow"
         android:padding="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -22,7 +23,7 @@
             android:fontFamily="@font/kanit_medium"
             android:text="โปรดตรวจสอบข้อมูล"
             android:textColor="@color/black"
-            android:textSize="15sp" />
+            android:textSize="25sp" />
 
         <!-- TEXT NOTE MENU -->
         <LinearLayout
@@ -35,8 +36,8 @@
             android:orientation="horizontal">
             <!-- IMAGE -->
             <ImageView
-                android:layout_width="35dp"
-                android:layout_height="35dp"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
                 android:src="@drawable/noteicon" />
             <!-- TEXT -->
             <TextView
@@ -46,7 +47,7 @@
                 android:fontFamily="@font/kanit_medium"
                 android:text="ร่วมทำบุญ : "
                 android:textColor="@color/black"
-                android:textSize="15sp" />
+                android:textSize="25sp" />
             <!-- TEXT MENU SELECT -->
             <TextView
                 android:layout_width="wrap_content"
@@ -54,7 +55,7 @@
                 android:fontFamily="@font/kanit_medium"
                 android:text="ทำบุญสร้างพระวิหาร"
                 android:textColor="@color/black"
-                android:textSize="15sp" />
+                android:textSize="25sp" />
         </LinearLayout>
 
         <!-- TEXT SUM -->
@@ -68,8 +69,8 @@
             android:orientation="horizontal">
             <!-- IMAGE -->
             <ImageView
-                android:layout_width="35dp"
-                android:layout_height="35dp"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
                 android:src="@drawable/thbicon" />
             <!-- TEXT -->
             <TextView
@@ -79,7 +80,7 @@
                 android:fontFamily="@font/kanit_medium"
                 android:text="ยอดเงิน : ฿"
                 android:textColor="@color/black"
-                android:textSize="15sp" />
+                android:textSize="25sp" />
             <!-- TEXT MENU SELECT -->
             <TextView
                 android:layout_width="wrap_content"
@@ -87,51 +88,63 @@
                 android:fontFamily="@font/kanit_medium"
                 android:text="1,500"
                 android:textColor="@color/black"
-                android:textSize="15sp" />
+                android:textSize="25sp" />
         </LinearLayout>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_above="@+id/buttonCancelAlert"
-            android:layout_marginBottom="0dp"
+            android:layout_above="@+id/layoutButton"
+            android:layout_marginBottom="20dp"
             android:fontFamily="@font/kanit_medium"
             android:text="*โปรดตรวจสอบความถูกต้องของข้อมูล"
             android:textColor="@color/black"
-            android:textSize="15sp" />
+            android:textSize="25sp" />
 
-        <!-- CANCEL BUTTON -->
-        <Button
-            android:id="@+id/buttonCancelAlert"
-            android:layout_width="125dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_marginBottom="0dp"
-            android:background="@drawable/bg_button_yellow_alert"
-            android:fontFamily="@font/kanit_medium"
-            android:padding="10dp"
-            android:text="ยกเลิก"
-            android:textColor="@color/black"
-            android:textSize="20dp"
-            android:stateListAnimator="@null" />
 
-        <!-- SUBMIT BUTTON -->
-        <Button
-            android:id="@+id/buttonSubmitAlert"
+        <!-- LAYOUT BUTTON -->
+        <LinearLayout
+            android:id="@+id/layoutButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="15dp"
-            android:layout_marginEnd="0dp"
-            android:layout_toEndOf="@+id/buttonCancelAlert"
-            android:background="@drawable/bg_button_white_alert"
-            android:fontFamily="@font/kanit_medium"
-            android:padding="10dp"
-            android:text="ยืนยัน"
-            android:textColor="@color/black"
-            android:textSize="20dp"
-            android:stateListAnimator="@null" />
+            android:gravity="center"
+            android:weightSum="100"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <!-- CANCEL BUTTON -->
+            <Button
+                android:id="@+id/buttonCancelAlert"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:background="@drawable/bg_button_yellow_alert"
+                android:fontFamily="@font/kanit_medium"
+                android:padding="25dp"
+                android:stateListAnimator="@null"
+                android:text="ยกเลิก"
+                android:textColor="@color/black"
+                android:textSize="25dp" />
+
+            <!-- SUBMIT BUTTON -->
+            <Button
+                android:id="@+id/buttonSubmitAlert"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_weight="70"
+                android:background="@drawable/bg_button_white_alert"
+                android:fontFamily="@font/kanit_medium"
+                android:padding="25dp"
+                android:stateListAnimator="@null"
+                android:text="ยืนยัน"
+                android:textColor="@color/black"
+                android:textSize="25dp" />
+
+        </LinearLayout>
+        <!-- END LAYOUT BUTTON -->
 
     </RelativeLayout>
+    <!-- END LAYOUT ALERT POPUP -->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

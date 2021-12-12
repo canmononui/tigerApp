@@ -48,5 +48,6 @@
             app:layout_constraintTop_toBottomOf="@+id/monkIcon" />
 
     </LinearLayout>
+    <!-- END ALL LAYOUT -->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

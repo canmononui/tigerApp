@@ -30,17 +30,41 @@
             <ImageView
                 android:layout_width="120dp"
                 android:layout_height="120dp"
-                android:src="@drawable/monk" />
+                android:src="@drawable/monk_loading" />
         </LinearLayout>
 
         <!-- THX TEXT -->
         <TextView
-            android:id="@+id/thxText"
+            android:id="@+id/thxText1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/kanit_medium"
-            android:text="ขอบคุณสำหรับการร่วมทำบุญ"
+            android:text="ขออนุโมทนาบุญกุศลในครั้งนี้"
             android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/monkIcon" />
+
+        <TextView
+            android:id="@+id/thxText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/kanit_medium"
+            android:text="จงดลบันดาลให้ท่าน"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/monkIcon" />
+
+        <TextView
+            android:id="@+id/thxText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/kanit_medium"
+            android:text="พบเจอแต่สิ่งที่ดีเข้ามาในชีวิต"
             android:textColor="@color/black"
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"

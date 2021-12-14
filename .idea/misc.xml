@@ -15,6 +15,8 @@
         <entry key="app/src/main/res/drawable/bg_button_white_alert.xml" value="0.53671875" />
         <entry key="app/src/main/res/drawable/bg_button_yellow.xml" value="0.56015625" />
         <entry key="app/src/main/res/drawable/bg_button_yellow_alert.xml" value="0.53671875" />
+        <entry key="app/src/main/res/drawable/bg_button_yellow_custom.xml" value="0.258203125" />
+        <entry key="app/src/main/res/drawable/bg_button_yellow_press.xml" value="0.258203125" />
         <entry key="app/src/main/res/drawable/bg_coin_balance_black.xml" value="0.56015625" />
         <entry key="app/src/main/res/drawable/bg_input_gray.xml" value="0.56015625" />
         <entry key="app/src/main/res/drawable/bg_total_darkgrey.xml" value="0.56015625" />
@@ -27,10 +29,10 @@
         <entry key="app/src/main/res/drawable/dot_status_offline.xml" value="0.56015625" />
         <entry key="app/src/main/res/drawable/dot_status_online.xml" value="0.56015625" />
         <entry key="app/src/main/res/drawable/dot_white.xml" value="0.53671875" />
-        <entry key="app/src/main/res/layout/activity_finish_loading.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/activity_finish_loading.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_input_phone_number.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.5" />
-        <entry key="app/src/main/res/layout/activity_money_balance.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_money_balance.xml" value="0.22" />
         <entry key="app/src/main/res/layout/alert_popup_submit.xml" value="0.25" />
       </map>
     </option>

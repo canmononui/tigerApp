@@ -64,12 +64,12 @@
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:background="@drawable/bg_button_yellow"
-        android:paddingTop="20dp"
-        android:paddingBottom="20dp" >
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp" >
         <!-- IMAGE MENU -->
         <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
             android:src="@drawable/temple" />
         <!-- TEXT MENU -->
         <TextView
@@ -113,7 +113,7 @@
                 android:id="@+id/menu2Img"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:src="@drawable/temple" />
+                android:src="@drawable/monk_menu" />
             <!-- TEXT MENU -->
             <LinearLayout
                 android:id="@+id/layoutTextMenu2"
@@ -162,7 +162,7 @@
                 android:id="@+id/menu3Img"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:src="@drawable/temple" />
+                android:src="@drawable/lamp_water" />
             <!-- TEXT MENU -->
             <LinearLayout
                 android:id="@+id/layoutTextMenu3"
@@ -217,15 +217,15 @@
             android:background="@drawable/bg_button_yellow"
             android:gravity="center"
             android:paddingStart="40dp"
-            android:paddingTop="20dp"
+            android:paddingTop="22.5dp"
             android:paddingEnd="40dp"
-            android:paddingBottom="20dp" >
+            android:paddingBottom="22.5dp" >
             <!-- IMAGE MENU -->
             <ImageView
                 android:id="@+id/menu4Img"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:src="@drawable/temple" />
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:src="@drawable/coffin" />
             <!-- TEXT MENU -->
             <LinearLayout
                 android:id="@+id/layoutTextMenu4"
@@ -248,7 +248,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/kanit_medium"
-                    android:text="โรงศพ"
+                    android:text="โลงศพ"
                     android:textColor="@color/black"
                     android:textSize="20dp" />
             </LinearLayout>
@@ -274,7 +274,7 @@
                 android:id="@+id/menu5Img"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:src="@drawable/temple" />
+                android:src="@drawable/angel" />
             <!-- TEXT MENU -->
             <LinearLayout
                 android:id="@+id/layoutTextMenu5"
@@ -288,7 +288,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/kanit_medium"
-                    android:text="ทำบุญ"
+                    android:text="ทำบุญให้แด่"
                     android:textColor="@color/black"
                     android:textSize="15dp" />
                 <!-- TEXT MENU 2 -->
@@ -297,7 +297,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/kanit_medium"
-                    android:text="เจ้ากรรมนายเวร"
+                    android:text="เทวดาประจำตัว"
                     android:textColor="@color/black"
                     android:textSize="20dp" />
             </LinearLayout>
@@ -339,7 +339,7 @@
                 android:id="@+id/menu6Img"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:src="@drawable/temple" />
+                android:src="@drawable/grandmafa" />
             <!-- TEXT MENU -->
             <LinearLayout
                 android:id="@+id/layoutTextMenu6"
@@ -353,7 +353,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/kanit_medium"
-                    android:text="ทำบุญ"
+                    android:text="ทำบุญให้แด่"
                     android:textColor="@color/black"
                     android:textSize="15dp" />
                 <!-- TEXT MENU 2 -->
@@ -362,7 +362,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/kanit_medium"
-                    android:text="บิดามารดาผู้มีพระคุณ"
+                    android:text="บิดามารดา ผู้มีพระคุณ"
                     android:textColor="@color/black"
                     android:textSize="20dp" />
             </LinearLayout>
@@ -388,7 +388,7 @@
                 android:id="@+id/menu7Img"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:src="@drawable/temple" />
+                android:src="@drawable/hell" />
             <!-- TEXT MENU -->
             <LinearLayout
                 android:id="@+id/layoutTextMenu7"
@@ -402,7 +402,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/kanit_medium"
-                    android:text="ทำบุญ"
+                    android:text="ทำบุญให้แด่"
                     android:textColor="@color/black"
                     android:textSize="15dp" />
                 <!-- TEXT MENU 2 -->
@@ -411,7 +411,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/kanit_medium"
-                    android:text="ทำบุญเทวดาประจำตัว"
+                    android:text="เจ้ากรรมนายเวร"
                     android:textColor="@color/black"
                     android:textSize="20dp" />
             </LinearLayout>

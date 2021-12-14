@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- SET COLOR ON ENABLE -->
+    <item
+        android:state_enabled="true"
+        android:drawable="@drawable/bg_button_yellow_press" />
+    <!-- SET COLOR ON PRESS BUTTON -->
+    <item
+        android:state_pressed="true"
+        android:drawable="@drawable/bg_button_yellow" />
+</selector>

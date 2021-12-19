@@ -7,27 +7,38 @@
     tools:context=".money_balance"
     android:background="@color/yellow" >
 
-    <!-- BACK IMAGE ICON -->
-    <ImageView
-        android:layout_width="35dp"
-        android:layout_height="20dp"
-        android:layout_marginTop="27dp"
+    <!-- LAYOUT BACK BUTTON -->
+    <LinearLayout
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
         android:layout_marginStart="15dp"
-        android:src="@drawable/backicon"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingEnd="15dp"
+        android:gravity="center"
+        android:clickable="true"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:clickable="true" />
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <!-- BACK BUTTON -->
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="20dp"
+            android:src="@drawable/backicon" />
+    </LinearLayout>
 
     <!-- OWNER NAME -->
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="10dp"
         android:fontFamily="@font/kanit_medium"
         android:text="WAT PHRA KAEW"
         android:textColor="#20232A"
-        android:textSize="25sp"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -37,7 +48,7 @@
         android:id="@+id/ownerImg"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="5dp"
         android:layout_marginEnd="15dp"
         android:src="@drawable/ownerprofileicon"
         app:layout_constraintEnd_toEndOf="parent"
@@ -64,7 +75,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
-        app:layout_constraintTop_toBottomOf="@+id/ownerImg" >
+        app:layout_constraintTop_toBottomOf="@+id/textView" >
 
         <!-- BANKNOTE -->
         <LinearLayout
@@ -84,7 +95,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_marginStart="23dp">
+                android:layout_marginStart="35dp">
 
                 <!-- BANKNOTE TYPE -->
                 <TextView
@@ -94,18 +105,18 @@
                     android:fontFamily="@font/kanit_medium"
                     android:text="ชนิด"
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
 
                 <!-- NUMBER -->
                 <TextView
                     android:id="@+id/banknoteNumber"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="100dp"
+                    android:layout_marginStart="80dp"
                     android:fontFamily="@font/kanit_medium"
                     android:text="จำนวน"
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
 
                 <!-- AMOUNT-->
                 <TextView
@@ -113,12 +124,12 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentTop="true"
-                    android:layout_marginStart="100dp"
+                    android:layout_marginStart="80dp"
                     android:layout_toEndOf="@+id/banknoteNumber"
                     android:fontFamily="@font/kanit_medium"
                     android:text="จำนวนเงิน"
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
             </LinearLayout>
             <!-- END LAYOUT HEADER BANKNOTE -->
 
@@ -128,14 +139,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="20dp"
                 android:gravity="center">
 
                 <!-- BANKNOTE 1000 -->
                 <LinearLayout
                     android:id="@+id/banknote1000Icon"
-                    android:layout_width="70dp"
-                    android:layout_height="35dp"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
                     android:background="@drawable/banknote_1000"
                     android:gravity="center">
                     <!-- TEXT -->
@@ -145,7 +156,7 @@
                         android:fontFamily="@font/kanit_medium"
                         android:text="1000"
                         android:textColor="@color/white"
-                        android:textSize="20sp" />
+                        android:textSize="30sp" />
                 </LinearLayout>
 
                 <!-- X -->
@@ -153,33 +164,33 @@
                     android:id="@+id/x1000"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="30dp"
+                    android:layout_marginStart="20dp"
                     android:fontFamily="@font/kanit_medium"
                     android:text="x"
                     android:textColor="@color/black"
-                    android:textSize="20sp" />
+                    android:textSize="30sp" />
 
                 <!-- NUMBER -->
                 <TextView
                     android:id="@+id/banknote1000Number"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="30dp"
+                    android:layout_marginStart="20dp"
                     android:fontFamily="@font/kanit_medium"
                     android:text="1000"
                     android:textColor="@color/black"
-                    android:textSize="20sp" />
+                    android:textSize="30sp" />
 
                 <!-- AMOUNT -->
                 <TextView
                     android:id="@+id/banknote1000Amount"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="80dp"
+                    android:layout_marginStart="50dp"
                     android:fontFamily="@font/kanit_medium"
                     android:text="1,000,000"
                     android:textColor="@color/black"
-                    android:textSize="20sp" />
+                    android:textSize="30sp" />
             </LinearLayout>
             <!-- END LAYOUT 1000 -->
 
@@ -195,8 +206,8 @@
                 <!-- BANKNOTE 500 -->
                 <LinearLayout
                     android:id="@+id/banknote500Icon"
-                    android:layout_width="70dp"
-                    android:layout_height="35dp"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
                     android:background="@drawable/banknote_500"
                     android:gravity="center">
                     <!-- TEXT -->
@@ -206,7 +217,7 @@
                         android:fontFamily="@font/kanit_medium"
                         android:text="500"
                         android:textColor="@color/white"
-                        android:textSize="20sp" />
+                        android:textSize="30sp" />
                 </LinearLayout>
 
                 <!-- X -->
@@ -214,33 +225,33 @@
                     android:id="@+id/x500"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="30dp"
+                    android:layout_marginStart="20dp"
                     android:fontFamily="@font/kanit_medium"
                     android:text="x"
                     android:textColor="@color/black"
-                    android:textSize="20sp" />
+                    android:textSize="30sp" />
 
                 <!-- NUMBER -->
                 <TextView
                     android:id="@+id/banknote500Number"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="30dp"
+                    android:layout_marginStart="20dp"
                     android:fontFamily="@font/kanit_medium"
                     android:text="1000"
                     android:textColor="@color/black"
-                    android:textSize="20sp" />
+                    android:textSize="30sp" />
 
                 <!-- AMOUNT -->
                 <TextView
                     android:id="@+id/banknote500Amount"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="80dp"
+                    android:layout_marginStart="50dp"
                     android:fontFamily="@font/kanit_medium"
                     android:text="1,000,000"
                     android:textColor="@color/black"
-                    android:textSize="20sp" />
+                    android:textSize="30sp" />
             </LinearLayout>
             <!-- END LAYOUT 500 -->
 
@@ -256,8 +267,8 @@
                 <!-- BANKNOTE 100 -->
                 <LinearLayout
                     android:id="@+id/banknote100Icon"
-                    android:layout_width="70dp"
-                    android:layout_height="35dp"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
                     android:background="@drawable/banknote_100"
                     android:gravity="center">
                     <!-- TEXT -->
@@ -267,7 +278,7 @@
                         android:fontFamily="@font/kanit_medium"
                         android:text="100"
                         android:textColor="@color/white"
-                        android:textSize="20sp" />
+                        android:textSize="30sp" />
                 </LinearLayout>
 
                 <!-- X -->
@@ -275,33 +286,33 @@
                     android:id="@+id/x100"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="30dp"
+                    android:layout_marginStart="20dp"
                     android:fontFamily="@font/kanit_medium"
                     android:text="x"
                     android:textColor="@color/black"
-                    android:textSize="20sp" />
+                    android:textSize="30sp" />
 
                 <!-- NUMBER -->
                 <TextView
                     android:id="@+id/banknote100Number"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="30dp"
+                    android:layout_marginStart="20dp"
                     android:fontFamily="@font/kanit_medium"
                     android:text="1000"
                     android:textColor="@color/black"
-                    android:textSize="20sp" />
+                    android:textSize="30sp" />
 
                 <!-- AMOUNT -->
                 <TextView
                     android:id="@+id/banknote100Amount"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="80dp"
+                    android:layout_marginStart="50dp"
                     android:fontFamily="@font/kanit_medium"
                     android:text="1,000,000"
                     android:textColor="@color/black"
-                    android:textSize="20sp" />
+                    android:textSize="30sp" />
             </LinearLayout>
             <!-- END LAYOUT 100 -->
 
@@ -317,8 +328,8 @@
                 <!-- BANKNOTE 50 -->
                 <LinearLayout
                     android:id="@+id/banknote50Icon"
-                    android:layout_width="70dp"
-                    android:layout_height="35dp"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
                     android:background="@drawable/banknote_50"
                     android:gravity="center">
                     <!-- TEXT -->
@@ -328,7 +339,7 @@
                         android:fontFamily="@font/kanit_medium"
                         android:text="50"
                         android:textColor="@color/white"
-                        android:textSize="20sp" />
+                        android:textSize="30sp" />
                 </LinearLayout>
 
                 <!-- X -->
@@ -336,33 +347,33 @@
                     android:id="@+id/x50"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="30dp"
+                    android:layout_marginStart="20dp"
                     android:fontFamily="@font/kanit_medium"
                     android:text="x"
                     android:textColor="@color/black"
-                    android:textSize="20sp" />
+                    android:textSize="30sp" />
 
                 <!-- NUMBER -->
                 <TextView
                     android:id="@+id/banknote50Number"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="30dp"
+                    android:layout_marginStart="20dp"
                     android:fontFamily="@font/kanit_medium"
                     android:text="1000"
                     android:textColor="@color/black"
-                    android:textSize="20sp" />
+                    android:textSize="30sp" />
 
                 <!-- AMOUNT -->
                 <TextView
                     android:id="@+id/banknote50Amount"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="80dp"
+                    android:layout_marginStart="50dp"
                     android:fontFamily="@font/kanit_medium"
                     android:text="1,000,000"
                     android:textColor="@color/black"
-                    android:textSize="20sp" />
+                    android:textSize="30sp" />
             </LinearLayout>
             <!-- END LAYOUT 50 -->
 
@@ -378,8 +389,8 @@
                 <!-- BANKNOTE 20 -->
                 <LinearLayout
                     android:id="@+id/banknote20Icon"
-                    android:layout_width="70dp"
-                    android:layout_height="35dp"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
                     android:background="@drawable/banknote_20"
                     android:gravity="center">
                     <!-- TEXT -->
@@ -389,7 +400,7 @@
                         android:fontFamily="@font/kanit_medium"
                         android:text="20"
                         android:textColor="@color/white"
-                        android:textSize="20sp" />
+                        android:textSize="30sp" />
                 </LinearLayout>
 
                 <!-- X -->
@@ -397,33 +408,33 @@
                     android:id="@+id/x20"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="30dp"
+                    android:layout_marginStart="20dp"
                     android:fontFamily="@font/kanit_medium"
                     android:text="x"
                     android:textColor="@color/black"
-                    android:textSize="20sp" />
+                    android:textSize="30sp" />
 
                 <!-- NUMBER -->
                 <TextView
                     android:id="@+id/banknote20Number"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="30dp"
+                    android:layout_marginStart="20dp"
                     android:fontFamily="@font/kanit_medium"
                     android:text="1000"
                     android:textColor="@color/black"
-                    android:textSize="20sp" />
+                    android:textSize="30sp" />
 
                 <!-- AMOUNT -->
                 <TextView
                     android:id="@+id/banknote20Amount"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="80dp"
+                    android:layout_marginStart="50dp"
                     android:fontFamily="@font/kanit_medium"
                     android:text="1,000,000"
                     android:textColor="@color/black"
-                    android:textSize="20sp" />
+                    android:textSize="30sp" />
             </LinearLayout>
             <!-- END LAYOUT 20 -->
 
@@ -448,7 +459,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_marginStart="23dp">
+                android:layout_marginStart="5dp">
 
                 <!-- BANKNOTE TYPE -->
                 <TextView
@@ -458,18 +469,18 @@
                     android:fontFamily="@font/kanit_medium"
                     android:text="ชนิด"
                     android:textColor="@color/white"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
 
                 <!-- NUMBER -->
                 <TextView
                     android:id="@+id/coinNumber"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="50dp"
+                    android:layout_marginStart="60dp"
                     android:fontFamily="@font/kanit_medium"
                     android:text="จำนวน"
                     android:textColor="@color/white"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
 
                 <!-- AMOUNT-->
                 <TextView
@@ -477,12 +488,12 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentTop="true"
-                    android:layout_marginStart="50dp"
+                    android:layout_marginStart="25dp"
                     android:layout_toEndOf="@+id/banknoteNumber"
                     android:fontFamily="@font/kanit_medium"
                     android:text="จำนวนเงิน"
                     android:textColor="@color/white"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
             </LinearLayout>
             <!-- END LAYOUT HEADER BANKNOTE -->
 
@@ -492,14 +503,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="20dp"
                 android:gravity="center">
 
                 <!-- COIN 10 -->
                 <LinearLayout
                     android:id="@+id/coin10Icon"
-                    android:layout_width="45dp"
-                    android:layout_height="45dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:background="@drawable/coin_10"
                     android:gravity="center">
                     <!-- TEXT -->
@@ -509,7 +520,7 @@
                         android:fontFamily="@font/kanit_medium"
                         android:text="10"
                         android:textColor="@color/white"
-                        android:textSize="15sp" />
+                        android:textSize="30sp" />
                 </LinearLayout>
 
                 <!-- X -->
@@ -521,7 +532,7 @@
                     android:fontFamily="@font/kanit_medium"
                     android:text="x"
                     android:textColor="@color/white"
-                    android:textSize="20sp" />
+                    android:textSize="30sp" />
 
                 <!-- NUMBER -->
                 <TextView
@@ -532,18 +543,18 @@
                     android:fontFamily="@font/kanit_medium"
                     android:text="1000"
                     android:textColor="@color/white"
-                    android:textSize="20sp" />
+                    android:textSize="30sp" />
 
                 <!-- AMOUNT -->
                 <TextView
                     android:id="@+id/coin10Amount"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="40dp"
+                    android:layout_marginStart="20dp"
                     android:fontFamily="@font/kanit_medium"
-                    android:text="1,000,000"
+                    android:text="1,000"
                     android:textColor="@color/white"
-                    android:textSize="20sp" />
+                    android:textSize="30sp" />
             </LinearLayout>
             <!-- END LAYOUT 10 -->
 
@@ -559,8 +570,8 @@
                 <!-- COIN 5 -->
                 <LinearLayout
                     android:id="@+id/coin5Icon"
-                    android:layout_width="45dp"
-                    android:layout_height="45dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:background="@drawable/coin_5"
                     android:gravity="center">
                     <!-- TEXT -->
@@ -570,7 +581,7 @@
                         android:fontFamily="@font/kanit_medium"
                         android:text="5"
                         android:textColor="@color/white"
-                        android:textSize="15sp" />
+                        android:textSize="30sp" />
                 </LinearLayout>
 
                 <!-- X -->
@@ -582,7 +593,7 @@
                     android:fontFamily="@font/kanit_medium"
                     android:text="x"
                     android:textColor="@color/white"
-                    android:textSize="20sp" />
+                    android:textSize="30sp" />
 
                 <!-- NUMBER -->
                 <TextView
@@ -593,18 +604,18 @@
                     android:fontFamily="@font/kanit_medium"
                     android:text="1000"
                     android:textColor="@color/white"
-                    android:textSize="20sp" />
+                    android:textSize="30sp" />
 
                 <!-- AMOUNT -->
                 <TextView
                     android:id="@+id/coin5Amount"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="40dp"
+                    android:layout_marginStart="20dp"
                     android:fontFamily="@font/kanit_medium"
-                    android:text="1,000,000"
+                    android:text="1,000"
                     android:textColor="@color/white"
-                    android:textSize="20sp" />
+                    android:textSize="30sp" />
             </LinearLayout>
             <!-- END LAYOUT 5 -->
 
@@ -620,8 +631,8 @@
                 <!-- COIN 2 -->
                 <LinearLayout
                     android:id="@+id/coin2Icon"
-                    android:layout_width="45dp"
-                    android:layout_height="45dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:background="@drawable/coin_2"
                     android:gravity="center">
                     <!-- TEXT -->
@@ -631,7 +642,7 @@
                         android:fontFamily="@font/kanit_medium"
                         android:text="2"
                         android:textColor="@color/white"
-                        android:textSize="15sp" />
+                        android:textSize="30sp" />
                 </LinearLayout>
 
                 <!-- X -->
@@ -643,7 +654,7 @@
                     android:fontFamily="@font/kanit_medium"
                     android:text="x"
                     android:textColor="@color/white"
-                    android:textSize="20sp" />
+                    android:textSize="30sp" />
 
                 <!-- NUMBER -->
                 <TextView
@@ -654,18 +665,18 @@
                     android:fontFamily="@font/kanit_medium"
                     android:text="1000"
                     android:textColor="@color/white"
-                    android:textSize="20sp" />
+                    android:textSize="30sp" />
 
                 <!-- AMOUNT -->
                 <TextView
                     android:id="@+id/coin2Amount"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="40dp"
+                    android:layout_marginStart="20dp"
                     android:fontFamily="@font/kanit_medium"
-                    android:text="1,000,000"
+                    android:text="1,000"
                     android:textColor="@color/white"
-                    android:textSize="20sp" />
+                    android:textSize="30sp" />
             </LinearLayout>
             <!-- END LAYOUT 2 -->
 
@@ -681,8 +692,8 @@
                 <!-- COIN 1 -->
                 <LinearLayout
                     android:id="@+id/coin1Icon"
-                    android:layout_width="45dp"
-                    android:layout_height="45dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:background="@drawable/coin_1"
                     android:gravity="center">
                     <!-- TEXT -->
@@ -692,7 +703,7 @@
                         android:fontFamily="@font/kanit_medium"
                         android:text="1"
                         android:textColor="@color/white"
-                        android:textSize="15sp" />
+                        android:textSize="30sp" />
                 </LinearLayout>
 
                 <!-- X -->
@@ -704,7 +715,7 @@
                     android:fontFamily="@font/kanit_medium"
                     android:text="x"
                     android:textColor="@color/white"
-                    android:textSize="20sp" />
+                    android:textSize="30sp" />
 
                 <!-- NUMBER -->
                 <TextView
@@ -715,18 +726,18 @@
                     android:fontFamily="@font/kanit_medium"
                     android:text="1000"
                     android:textColor="@color/white"
-                    android:textSize="20sp" />
+                    android:textSize="30sp" />
 
                 <!-- AMOUNT -->
                 <TextView
                     android:id="@+id/coin1Amount"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="40dp"
+                    android:layout_marginStart="20dp"
                     android:fontFamily="@font/kanit_medium"
-                    android:text="1,000,000"
+                    android:text="1,000"
                     android:textColor="@color/white"
-                    android:textSize="20sp" />
+                    android:textSize="30sp" />
             </LinearLayout>
             <!-- END LAYOUT 1 -->
 
@@ -754,7 +765,7 @@
             android:fontFamily="@font/kanit_medium"
             android:text="รายการเงินทำบุญ"
             android:textColor="@color/black"
-            android:textSize="25sp"
+            android:textSize="30sp"
             app:layout_constraintStart_toStartOf="@+id/view"
             app:layout_constraintTop_toTopOf="@+id/view" />
 
@@ -781,7 +792,7 @@
                 android:fontFamily="@font/kanit_medium"
                 android:text="ยอดเงินทำบุญ"
                 android:textColor="@color/black"
-                android:textSize="25sp" />
+                android:textSize="30sp" />
 
             <!-- TEXT -->
             <TextView
@@ -793,7 +804,7 @@
                 android:fontFamily="@font/kanit_medium"
                 android:text="฿"
                 android:textColor="@color/black"
-                android:textSize="25sp" />
+                android:textSize="30sp" />
 
             <!-- TEXT -->
             <TextView
@@ -805,7 +816,7 @@
                 android:fontFamily="@font/kanit_medium"
                 android:text="10,000,000"
                 android:textColor="@color/black"
-                android:textSize="25sp" />
+                android:textSize="30sp" />
         </RelativeLayout>
         <!-- MONEY AMOUNT -->
 
@@ -830,7 +841,7 @@
                 android:fontFamily="@font/kanit_medium"
                 android:text="รวมทั้งสิ้น"
                 android:textColor="@color/black"
-                android:textSize="25sp" />
+                android:textSize="30sp" />
 
             <!-- TEXT -->
             <TextView
@@ -842,7 +853,7 @@
                 android:fontFamily="@font/kanit_medium"
                 android:text="฿"
                 android:textColor="@color/black"
-                android:textSize="20sp" />
+                android:textSize="30sp" />
 
             <!-- TEXT -->
             <TextView
@@ -854,7 +865,7 @@
                 android:fontFamily="@font/kanit_medium"
                 android:text="10,000,000"
                 android:textColor="@color/black"
-                android:textSize="25sp" />
+                android:textSize="30sp" />
         </RelativeLayout>
         <!-- END MONEY TOTAL -->
 
@@ -882,7 +893,7 @@
                 android:stateListAnimator="@null"
                 android:text="ยกเลิก"
                 android:textColor="@color/black"
-                android:textSize="25dp" />
+                android:textSize="30dp" />
 
             <!-- SUBMIT BUTTON -->
             <Button
@@ -897,7 +908,7 @@
                 android:stateListAnimator="@null"
                 android:text="ยืนยัน"
                 android:textColor="@color/black"
-                android:textSize="25dp" />
+                android:textSize="30dp" />
 
         </LinearLayout>
         <!-- END LAYOUT BUTTON -->

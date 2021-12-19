@@ -23,7 +23,7 @@
             android:fontFamily="@font/kanit_medium"
             android:text="โปรดตรวจสอบข้อมูล"
             android:textColor="@color/black"
-            android:textSize="25sp" />
+            android:textSize="30sp" />
 
         <!-- TEXT NOTE MENU -->
         <LinearLayout
@@ -47,7 +47,7 @@
                 android:fontFamily="@font/kanit_medium"
                 android:text="ร่วมทำบุญ : "
                 android:textColor="@color/black"
-                android:textSize="25sp" />
+                android:textSize="30sp" />
             <!-- TEXT MENU SELECT -->
             <TextView
                 android:layout_width="wrap_content"
@@ -55,7 +55,7 @@
                 android:fontFamily="@font/kanit_medium"
                 android:text="ทำบุญสร้างพระวิหาร"
                 android:textColor="@color/black"
-                android:textSize="25sp" />
+                android:textSize="30dp" />
         </LinearLayout>
 
         <!-- TEXT SUM -->
@@ -80,7 +80,7 @@
                 android:fontFamily="@font/kanit_medium"
                 android:text="ยอดเงิน : ฿"
                 android:textColor="@color/black"
-                android:textSize="25sp" />
+                android:textSize="30sp" />
             <!-- TEXT MENU SELECT -->
             <TextView
                 android:layout_width="wrap_content"
@@ -88,7 +88,7 @@
                 android:fontFamily="@font/kanit_medium"
                 android:text="1,500"
                 android:textColor="@color/black"
-                android:textSize="25sp" />
+                android:textSize="30sp" />
         </LinearLayout>
 
         <TextView
@@ -99,7 +99,7 @@
             android:fontFamily="@font/kanit_medium"
             android:text="*โปรดตรวจสอบความถูกต้องของข้อมูล"
             android:textColor="@color/black"
-            android:textSize="25sp" />
+            android:textSize="30sp" />
 
 
         <!-- LAYOUT BUTTON -->
@@ -124,7 +124,7 @@
                 android:stateListAnimator="@null"
                 android:text="ยกเลิก"
                 android:textColor="@color/black"
-                android:textSize="25dp" />
+                android:textSize="30dp" />
 
             <!-- SUBMIT BUTTON -->
             <Button
@@ -139,7 +139,7 @@
                 android:stateListAnimator="@null"
                 android:text="ยืนยัน"
                 android:textColor="@color/black"
-                android:textSize="25dp" />
+                android:textSize="30dp" />
 
         </LinearLayout>
         <!-- END LAYOUT BUTTON -->

@@ -31,9 +31,11 @@
         <entry key="app/src/main/res/drawable/dot_white.xml" value="0.53671875" />
         <entry key="app/src/main/res/layout/activity_finish_loading.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_input_phone_number.xml" value="0.33" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.5" />
-        <entry key="app/src/main/res/layout/activity_money_balance.xml" value="0.22" />
-        <entry key="app/src/main/res/layout/alert_popup_submit.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_money_balance.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/alert_popup_start.xml" value="0.24609375" />
+        <entry key="app/src/main/res/layout/alert_popup_submit.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/alert_popup_submit_start.xml" value="0.33" />
       </map>
     </option>
   </component>

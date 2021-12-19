@@ -7,6 +7,23 @@
     tools:context=".finish_loading"
     android:background="@color/yellow">
 
+    <!-- SKIP BUTTON -->
+    <Button
+        android:id="@+id/buttonSkip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/bg_button_white_alert"
+        android:fontFamily="@font/kanit_medium"
+        android:padding="25dp"
+        android:stateListAnimator="@null"
+        android:text="ข้าม"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <!-- ALL LAYOUT -->
     <LinearLayout
         android:id="@+id/layout"
@@ -22,27 +39,28 @@
         <!-- MONK ICON-->
         <LinearLayout
             android:id="@+id/monkIcon"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
+            android:layout_width="320dp"
+            android:layout_height="320dp"
             android:background="@drawable/dot_white"
             android:gravity="center">
 
             <ImageView
-                android:layout_width="120dp"
-                android:layout_height="120dp"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
                 android:src="@drawable/monk_loading" />
         </LinearLayout>
 
         <!-- THX TEXT -->
+
         <TextView
             android:id="@+id/thxText1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
             android:fontFamily="@font/kanit_medium"
             android:text="ขออนุโมทนาบุญกุศลในครั้งนี้"
-            android:layout_marginTop="20dp"
             android:textColor="@color/black"
-            android:textSize="20sp"
+            android:textSize="30dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/monkIcon" />
@@ -54,7 +72,7 @@
             android:fontFamily="@font/kanit_medium"
             android:text="จงดลบันดาลให้ท่าน"
             android:textColor="@color/black"
-            android:textSize="20sp"
+            android:textSize="30dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/monkIcon" />
@@ -66,7 +84,7 @@
             android:fontFamily="@font/kanit_medium"
             android:text="พบเจอแต่สิ่งที่ดีเข้ามาในชีวิต"
             android:textColor="@color/black"
-            android:textSize="20sp"
+            android:textSize="30dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/monkIcon" />

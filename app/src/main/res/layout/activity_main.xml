@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:fontFamily="@font/kanit_medium"
-        android:text="WAT PHRA KAEW"
+        android:text="วัดหนองบัว"
         android:textColor="@color/black"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -64,8 +64,8 @@
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:background="@drawable/bg_button_yellow"
-        android:paddingTop="15dp"
-        android:paddingBottom="15dp" >
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp" >
         <!-- IMAGE MENU -->
         <ImageView
             android:layout_width="110dp"
@@ -78,7 +78,7 @@
             android:fontFamily="@font/kanit_medium"
             android:text="ทำบุญสร้างพระวิหาร"
             android:textColor="@color/black"
-            android:textSize="25dp"
+            android:textSize="35dp"
             android:layout_marginStart="50dp" />
     </LinearLayout>
     <!-- END ROW BUTTON 1 -->
@@ -104,10 +104,10 @@
             android:layout_weight="50"
             android:background="@drawable/bg_button_yellow"
             android:gravity="center"
-            android:paddingStart="30dp"
-            android:paddingTop="20dp"
-            android:paddingEnd="30dp"
-            android:paddingBottom="20dp" >
+            android:paddingStart="25dp"
+            android:paddingTop="30dp"
+            android:paddingEnd="25dp"
+            android:paddingBottom="30dp" >
             <!-- IMAGE MENU -->
             <ImageView
                 android:id="@+id/menu2Img"
@@ -129,7 +129,7 @@
                     android:fontFamily="@font/kanit_medium"
                     android:text="ทำบุญ"
                     android:textColor="@color/black"
-                    android:textSize="25dp" />
+                    android:textSize="35dp" />
                 <!-- TEXT MENU 2 -->
                 <TextView
                     android:id="@+id/menu2Text2"
@@ -138,7 +138,7 @@
                     android:fontFamily="@font/kanit_medium"
                     android:text="การศึกษา"
                     android:textColor="@color/black"
-                    android:textSize="25dp" />
+                    android:textSize="35dp" />
             </LinearLayout>
             <!-- END TEXT MENU -->
         </LinearLayout>
@@ -152,10 +152,10 @@
             android:layout_weight="50"
             android:background="@drawable/bg_button_yellow"
             android:gravity="center"
-            android:paddingStart="30dp"
-            android:paddingTop="20dp"
-            android:paddingEnd="30dp"
-            android:paddingBottom="20dp"
+            android:paddingStart="25dp"
+            android:paddingTop="30dp"
+            android:paddingEnd="25dp"
+            android:paddingBottom="30dp"
             android:layout_marginStart="20dp">
             <!-- IMAGE MENU -->
             <ImageView
@@ -178,7 +178,7 @@
                     android:fontFamily="@font/kanit_medium"
                     android:text="ทำบุญ"
                     android:textColor="@color/black"
-                    android:textSize="25dp" />
+                    android:textSize="35dp" />
                 <!-- TEXT MENU 2 -->
                 <TextView
                     android:id="@+id/menu3Text2"
@@ -187,7 +187,7 @@
                     android:fontFamily="@font/kanit_medium"
                     android:text="ค่าน้ำค่าไฟ"
                     android:textColor="@color/black"
-                    android:textSize="25dp" />
+                    android:textSize="35dp" />
             </LinearLayout>
             <!-- END TEXT MENU -->
         </LinearLayout>
@@ -216,10 +216,10 @@
             android:layout_weight="50"
             android:background="@drawable/bg_button_yellow"
             android:gravity="center"
-            android:paddingStart="30dp"
-            android:paddingTop="22dp"
-            android:paddingEnd="30dp"
-            android:paddingBottom="22.5dp" >
+            android:paddingStart="25dp"
+            android:paddingTop="30dp"
+            android:paddingEnd="25dp"
+            android:paddingBottom="30dp" >
             <!-- IMAGE MENU -->
             <ImageView
                 android:id="@+id/menu4Img"
@@ -241,7 +241,7 @@
                     android:fontFamily="@font/kanit_medium"
                     android:text="ทำบุญ"
                     android:textColor="@color/black"
-                    android:textSize="25dp" />
+                    android:textSize="35dp" />
                 <!-- TEXT MENU 2 -->
                 <TextView
                     android:id="@+id/menu4Text2"
@@ -250,7 +250,7 @@
                     android:fontFamily="@font/kanit_medium"
                     android:text="โลงศพ"
                     android:textColor="@color/black"
-                    android:textSize="25dp" />
+                    android:textSize="35dp" />
             </LinearLayout>
             <!-- END TEXT MENU -->
         </LinearLayout>
@@ -264,10 +264,10 @@
             android:layout_weight="50"
             android:background="@drawable/bg_button_yellow"
             android:gravity="center"
-            android:paddingStart="30dp"
-            android:paddingTop="20dp"
-            android:paddingEnd="30dp"
-            android:paddingBottom="20dp"
+            android:paddingStart="25dp"
+            android:paddingTop="30dp"
+            android:paddingEnd="25dp"
+            android:paddingBottom="30dp"
             android:layout_marginStart="20dp">
             <!-- IMAGE MENU -->
             <ImageView
@@ -290,7 +290,7 @@
                     android:fontFamily="@font/kanit_medium"
                     android:text="ทำบุญให้แด่"
                     android:textColor="@color/black"
-                    android:textSize="25dp" />
+                    android:textSize="35dp" />
                 <!-- TEXT MENU 2 -->
                 <TextView
                     android:id="@+id/menu5Text2"
@@ -299,7 +299,7 @@
                     android:fontFamily="@font/kanit_medium"
                     android:text="เทวดาประจำตัว"
                     android:textColor="@color/black"
-                    android:textSize="25dp" />
+                    android:textSize="35dp" />
             </LinearLayout>
             <!-- END TEXT MENU -->
         </LinearLayout>
@@ -330,9 +330,9 @@
             android:layout_weight="50"
             android:background="@drawable/bg_button_yellow"
             android:gravity="center"
-            android:paddingStart="30dp"
+            android:paddingStart="25dp"
             android:paddingTop="20dp"
-            android:paddingEnd="30dp"
+            android:paddingEnd="25dp"
             android:paddingBottom="20dp" >
             <!-- IMAGE MENU -->
             <ImageView
@@ -353,18 +353,27 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/kanit_medium"
-                    android:text="ทำบุญให้แด่บิดา"
+                    android:text="ทำบุญให้แด่"
                     android:textColor="@color/black"
-                    android:textSize="25dp" />
+                    android:textSize="35dp" />
                 <!-- TEXT MENU 2 -->
                 <TextView
                     android:id="@+id/menu6Text2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/kanit_medium"
-                    android:text="มารดา ผู้มีพระคุณ"
+                    android:text="บิดามารดา"
                     android:textColor="@color/black"
-                    android:textSize="25dp" />
+                    android:textSize="35dp" />
+                <!-- TEXT MENU 3 -->
+                <TextView
+                    android:id="@+id/menu6Text3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/kanit_medium"
+                    android:text="ผู้มีพระคุณ"
+                    android:textColor="@color/black"
+                    android:textSize="35dp" />
             </LinearLayout>
             <!-- END TEXT MENU -->
         </LinearLayout>
@@ -378,9 +387,9 @@
             android:layout_weight="50"
             android:background="@drawable/bg_button_yellow"
             android:gravity="center"
-            android:paddingStart="30dp"
+            android:paddingStart="25dp"
             android:paddingTop="20dp"
-            android:paddingEnd="30dp"
+            android:paddingEnd="25dp"
             android:paddingBottom="20dp"
             android:layout_marginStart="20dp">
             <!-- IMAGE MENU -->
@@ -404,16 +413,25 @@
                     android:fontFamily="@font/kanit_medium"
                     android:text="ทำบุญให้แด่"
                     android:textColor="@color/black"
-                    android:textSize="25dp" />
+                    android:textSize="35dp" />
                 <!-- TEXT MENU 2 -->
                 <TextView
                     android:id="@+id/menu7Text2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/kanit_medium"
-                    android:text="เจ้ากรรมนายเวร"
+                    android:text="เจ้ากรรม"
                     android:textColor="@color/black"
-                    android:textSize="25dp" />
+                    android:textSize="35dp" />
+                <!-- TEXT MENU 3 -->
+                <TextView
+                    android:id="@+id/menu7Text3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/kanit_medium"
+                    android:text="นายเวร"
+                    android:textColor="@color/black"
+                    android:textSize="35dp" />
             </LinearLayout>
             <!-- END TEXT MENU -->
         </LinearLayout>

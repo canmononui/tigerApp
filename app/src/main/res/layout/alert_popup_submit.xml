@@ -23,7 +23,7 @@
             android:fontFamily="@font/kanit_medium"
             android:text="โปรดตรวจสอบข้อมูล"
             android:textColor="@color/black"
-            android:textSize="30sp" />
+            android:textSize="45sp" />
 
         <!-- TEXT NOTE MENU -->
         <LinearLayout
@@ -31,31 +31,41 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/textTop"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="30dp"
             android:gravity="center_vertical"
             android:orientation="horizontal">
             <!-- IMAGE -->
             <ImageView
-                android:layout_width="65dp"
-                android:layout_height="65dp"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
                 android:src="@drawable/noteicon" />
-            <!-- TEXT -->
-            <TextView
+
+            <LinearLayout
+                android:id="@+id/layoutTextMenu"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:fontFamily="@font/kanit_medium"
-                android:text="ร่วมทำบุญ : "
-                android:textColor="@color/black"
-                android:textSize="30sp" />
-            <!-- TEXT MENU SELECT -->
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/kanit_medium"
-                android:text="ทำบุญสร้างพระวิหาร"
-                android:textColor="@color/black"
-                android:textSize="30dp" />
+                android:orientation="vertical">
+                <!-- TEXT -->
+                <TextView
+                    android:id="@+id/textMenuSelect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/kanit_medium"
+                    android:text="ทำบุญสร้างพระวิหาร"
+                    android:textColor="@color/black"
+                    android:textSize="45sp" />
+                <!-- TEXT -->
+                <TextView
+                    android:id="@+id/textMenuSelectDes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/kanit_medium"
+                    android:text="ร่วมทำบุญ"
+                    android:textColor="@color/black"
+                    android:textSize="35sp" />
+            </LinearLayout>
         </LinearLayout>
 
         <!-- TEXT SUM -->
@@ -64,42 +74,87 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/layoutNoteMenu"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="30dp"
             android:gravity="center_vertical"
             android:orientation="horizontal">
             <!-- IMAGE -->
             <ImageView
-                android:layout_width="65dp"
-                android:layout_height="65dp"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
                 android:src="@drawable/thbicon" />
+
+            <LinearLayout
+                android:id="@+id/layoutTextAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/layoutTextAmountSub"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <!-- TEXT -->
+                    <TextView
+                        android:id="@+id/textAmountBathSign"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="@font/kanit_medium"
+                        android:text="฿"
+                        android:textColor="@color/black"
+                        android:textSize="45sp" />
+                    <!-- TEXT -->
+                    <TextView
+                        android:id="@+id/textAmountBath"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="@font/kanit_medium"
+                        android:text="1,315"
+                        android:textColor="@color/black"
+                        android:textSize="45sp" />
+                </LinearLayout>
+                <!-- TEXT -->
+                <TextView
+                    android:id="@+id/textAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/kanit_medium"
+                    android:text="ยอดเงิน"
+                    android:textColor="@color/black"
+                    android:textSize="35sp" />
+            </LinearLayout>
+
             <!-- TEXT -->
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:fontFamily="@font/kanit_medium"
-                android:text="ยอดเงิน : ฿"
-                android:textColor="@color/black"
-                android:textSize="30sp" />
+            <!--            <TextView-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginStart="10dp"-->
+            <!--                android:fontFamily="@font/kanit_medium"-->
+            <!--                android:text="ยอดเงิน : ฿"-->
+            <!--                android:textColor="@color/black"-->
+            <!--                android:textSize="30sp" />-->
             <!-- TEXT MENU SELECT -->
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/kanit_medium"
-                android:text="1,500"
-                android:textColor="@color/black"
-                android:textSize="30sp" />
+            <!--            <TextView-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:fontFamily="@font/kanit_medium"-->
+            <!--                android:text="1,500"-->
+            <!--                android:textColor="@color/black"-->
+            <!--                android:textSize="30sp" />-->
         </LinearLayout>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_above="@+id/layoutButton"
-            android:layout_marginBottom="20dp"
+            android:layout_marginBottom="30dp"
             android:fontFamily="@font/kanit_medium"
             android:text="*โปรดตรวจสอบความถูกต้องของข้อมูล"
             android:textColor="@color/black"
-            android:textSize="30sp" />
+            android:textSize="35sp" />
 
 
         <!-- LAYOUT BUTTON -->
@@ -117,14 +172,14 @@
                 android:id="@+id/buttonCancelAlert"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="30"
+                android:layout_weight="40"
                 android:background="@drawable/bg_button_yellow_alert"
-                android:fontFamily="@font/kanit_medium"
+                android:fontFamily="@font/kanit_regular"
                 android:padding="25dp"
                 android:stateListAnimator="@null"
                 android:text="ยกเลิก"
                 android:textColor="@color/black"
-                android:textSize="30dp" />
+                android:textSize="45dp" />
 
             <!-- SUBMIT BUTTON -->
             <Button
@@ -132,14 +187,14 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
-                android:layout_weight="70"
+                android:layout_weight="60"
                 android:background="@drawable/bg_button_white_alert"
-                android:fontFamily="@font/kanit_medium"
+                android:fontFamily="@font/kanit_regular"
                 android:padding="25dp"
                 android:stateListAnimator="@null"
-                android:text="ยืนยัน"
+                android:text="ตกลง"
                 android:textColor="@color/black"
-                android:textSize="30dp" />
+                android:textSize="45dp" />
 
         </LinearLayout>
         <!-- END LAYOUT BUTTON -->

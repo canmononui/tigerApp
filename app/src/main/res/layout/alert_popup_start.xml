@@ -21,28 +21,40 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/kanit_medium"
-            android:text="โปรดเพิ่มธนบัตรและเหรียญ"
+            android:text="ขอเชิญร่วมทำบุญ"
             android:textColor="@color/black"
-            android:textSize="30sp" />
+            android:textSize="45sp" />
 
-        <!-- TEXT NOTE MENU -->
-        <LinearLayout
-            android:id="@+id/layoutNoteMenu"
+        <!-- TEXT -->
+        <TextView
+            android:id="@+id/textDes"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/textTop"
-            android:layout_marginTop="20dp"
-            android:gravity="center_vertical"
-            android:orientation="horizontal">
-            <!-- TEXT -->
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/kanit_medium"
-                android:text="เพิ่มธนบัตรและเหรียญในช่องรับธนบัตรและเหรียญ ตามจำนวนที่ต้องการ"
-                android:textColor="@color/black"
-                android:textSize="30sp" />
-        </LinearLayout>
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/kanit_medium"
+            android:text="ใส่ธนบัตรและเหรียญ ในช่องรับธนบัตรและเหรียญตามจำนวนที่ต้องการ"
+            android:textColor="@color/black"
+            android:textSize="45sp" />
+
+        <!-- TEXT NOTE MENU -->
+<!--        <LinearLayout-->
+<!--            android:id="@+id/layoutNoteMenu"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/textTop"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:gravity="center_vertical"-->
+<!--            android:orientation="horizontal">-->
+<!--            &lt;!&ndash; TEXT &ndash;&gt;-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:fontFamily="@font/kanit_medium"-->
+<!--                android:text="ใส่ธนบัตรและเหรียญ ในช่องรับธนบัตรและเหรียญตามจำนวนที่ต้องการ"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="45sp" />-->
+<!--        </LinearLayout>-->
 
         <!-- LAYOUT BUTTON -->
         <LinearLayout
@@ -59,12 +71,12 @@
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
                 android:background="@drawable/bg_button_white_alert"
-                android:fontFamily="@font/kanit_medium"
+                android:fontFamily="@font/kanit_regular"
                 android:padding="25dp"
                 android:stateListAnimator="@null"
                 android:text="เริ่ม"
                 android:textColor="@color/black"
-                android:textSize="30dp" />
+                android:textSize="45dp" />
 
         </LinearLayout>
         <!-- END LAYOUT BUTTON -->

@@ -36,7 +36,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:fontFamily="@font/kanit_medium"
-        android:text="WAT PHRA KAEW"
+        android:text="วัดหนองบัว"
         android:textColor="#20232A"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -95,7 +95,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_marginStart="35dp">
+                android:layout_marginStart="25dp">
 
                 <!-- BANKNOTE TYPE -->
                 <TextView
@@ -103,7 +103,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/kanit_medium"
-                    android:text="ชนิด"
+                    android:text="ธนบัตร"
                     android:textColor="@color/black"
                     android:textSize="20sp" />
 
@@ -459,7 +459,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_marginStart="5dp">
+                android:layout_marginStart="0dp">
 
                 <!-- BANKNOTE TYPE -->
                 <TextView
@@ -467,7 +467,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/kanit_medium"
-                    android:text="ชนิด"
+                    android:text="เหรียญ"
                     android:textColor="@color/white"
                     android:textSize="20sp" />
 
@@ -476,7 +476,7 @@
                     android:id="@+id/coinNumber"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="60dp"
+                    android:layout_marginStart="30dp"
                     android:fontFamily="@font/kanit_medium"
                     android:text="จำนวน"
                     android:textColor="@color/white"
@@ -488,7 +488,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentTop="true"
-                    android:layout_marginStart="25dp"
+                    android:layout_marginStart="30dp"
                     android:layout_toEndOf="@+id/banknoteNumber"
                     android:fontFamily="@font/kanit_medium"
                     android:text="จำนวนเงิน"
@@ -765,7 +765,7 @@
             android:fontFamily="@font/kanit_medium"
             android:text="รายการเงินทำบุญ"
             android:textColor="@color/black"
-            android:textSize="30sp"
+            android:textSize="45sp"
             app:layout_constraintStart_toStartOf="@+id/view"
             app:layout_constraintTop_toTopOf="@+id/view" />
 
@@ -779,7 +779,10 @@
             android:layout_marginTop="20dp"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
-            android:padding="13dp"
+            android:paddingStart="20dp"
+            android:paddingTop="15dp"
+            android:paddingEnd="20dp"
+            android:paddingBottom="15dp"
             android:background="@drawable/bg_amount_gray"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textTop">
@@ -792,7 +795,7 @@
                 android:fontFamily="@font/kanit_medium"
                 android:text="ยอดเงินทำบุญ"
                 android:textColor="@color/black"
-                android:textSize="30sp" />
+                android:textSize="45sp" />
 
             <!-- TEXT -->
             <TextView
@@ -804,7 +807,7 @@
                 android:fontFamily="@font/kanit_medium"
                 android:text="฿"
                 android:textColor="@color/black"
-                android:textSize="30sp" />
+                android:textSize="45sp" />
 
             <!-- TEXT -->
             <TextView
@@ -814,9 +817,9 @@
                 android:layout_alignParentEnd="true"
                 android:layout_marginEnd="0dp"
                 android:fontFamily="@font/kanit_medium"
-                android:text="10,000,000"
+                android:text="1,315"
                 android:textColor="@color/black"
-                android:textSize="30sp" />
+                android:textSize="45sp" />
         </RelativeLayout>
         <!-- MONEY AMOUNT -->
 
@@ -829,7 +832,10 @@
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
             android:background="@drawable/bg_total_darkgrey"
-            android:padding="13dp"
+            android:paddingStart="20dp"
+            android:paddingTop="15dp"
+            android:paddingEnd="20dp"
+            android:paddingBottom="15dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/moneyAmount">
 
@@ -841,7 +847,7 @@
                 android:fontFamily="@font/kanit_medium"
                 android:text="รวมทั้งสิ้น"
                 android:textColor="@color/black"
-                android:textSize="30sp" />
+                android:textSize="45sp" />
 
             <!-- TEXT -->
             <TextView
@@ -853,7 +859,7 @@
                 android:fontFamily="@font/kanit_medium"
                 android:text="฿"
                 android:textColor="@color/black"
-                android:textSize="30sp" />
+                android:textSize="45sp" />
 
             <!-- TEXT -->
             <TextView
@@ -863,9 +869,9 @@
                 android:layout_alignParentEnd="true"
                 android:layout_marginEnd="0dp"
                 android:fontFamily="@font/kanit_medium"
-                android:text="10,000,000"
+                android:text="1,315"
                 android:textColor="@color/black"
-                android:textSize="30sp" />
+                android:textSize="45sp" />
         </RelativeLayout>
         <!-- END MONEY TOTAL -->
 
@@ -888,12 +894,12 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="30"
                 android:background="@drawable/bg_button_white"
-                android:fontFamily="@font/kanit_medium"
+                android:fontFamily="@font/kanit_regular"
                 android:padding="25dp"
                 android:stateListAnimator="@null"
                 android:text="ยกเลิก"
                 android:textColor="@color/black"
-                android:textSize="30dp" />
+                android:textSize="45dp" />
 
             <!-- SUBMIT BUTTON -->
             <Button
@@ -903,12 +909,12 @@
                 android:layout_marginStart="20dp"
                 android:layout_weight="70"
                 android:background="@drawable/bg_button_yellow"
-                android:fontFamily="@font/kanit_medium"
+                android:fontFamily="@font/kanit_regular"
                 android:padding="25dp"
                 android:stateListAnimator="@null"
                 android:text="ยืนยัน"
                 android:textColor="@color/black"
-                android:textSize="30dp" />
+                android:textSize="45dp" />
 
         </LinearLayout>
         <!-- END LAYOUT BUTTON -->

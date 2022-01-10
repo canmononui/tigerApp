@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".input_phone_number"
+    android:background="@color/yellow" >
+
+    <!-- LAYOUT BACK BUTTON -->
+    <LinearLayout
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="15dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingEnd="15dp"
+        android:gravity="center"
+        android:clickable="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <!-- BACK BUTTON -->
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="20dp"
+            android:src="@drawable/backicon" />
+    </LinearLayout>
+
+    <!-- OWNER NAME -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/kanit_medium"
+        android:text="วัดหนองบัว"
+        android:textColor="#20232A"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- OWNER IMAGE -->
+    <ImageView
+        android:id="@+id/ownerImg"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="15dp"
+        android:src="@drawable/ownerprofileicon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- DOT USER OWNER STATUS -->
+    <View
+        android:id="@+id/status"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/dot_status_online"
+        app:layout_constraintStart_toStartOf="@+id/ownerImg"
+        app:layout_constraintTop_toTopOf="@+id/ownerImg" />
+
+    <!-- BG WHITE -->
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_white"
+        app:layout_constraintTop_toBottomOf="@+id/ownerImg" />
+
+    <!-- TOPIC -->
+    <LinearLayout
+        android:id="@+id/layoutTopic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toTopOf="@+id/view">
+
+        <!-- ICON TOPIC-->
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/check_green_icon" />
+
+        <!-- TEXT TOPIC -->
+        <TextView
+            android:id="@+id/textQr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/kanit_medium"
+            android:text="ร่วมทำบุญสำเร็จ"
+            android:textColor="@color/black"
+            android:textSize="45sp"/>
+
+    </LinearLayout>
+    <!-- END TOPIC -->
+
+    <!-- TEXT DATE TIME -->
+    <TextView
+        android:id="@+id/textDateTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/kanit_regular"
+        android:text="09 ม.ค. 65, 10:45"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/layoutTopic"
+        app:layout_constraintTop_toBottomOf="@+id/layoutTopic" />
+
+    <!-- TEXT REF CODE -->
+    <TextView
+        android:id="@+id/textRefCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/kanit_regular"
+        android:text="รหัสอ้างอิง : 2022010910453624003601608"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textDateTime" />
+
+    <!-- FROM -->
+    <LinearLayout
+        android:id="@+id/layoutFrom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="60dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textRefCode">
+
+        <!-- ICON FROM-->
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/qr_icon" />
+
+        <!-- TEXT FROM LAYOUT -->
+        <LinearLayout
+            android:id="@+id/layoutTextFrom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="@+id/view">
+
+            <!-- TEXT ACCOUNT NAME -->
+            <TextView
+                android:id="@+id/textAccountNameFrom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/kanit_medium"
+                android:text="นาย วราวุฒิ"
+                android:textColor="@color/black"
+                android:textSize="45sp" />
+
+            <!-- TEXT BANK NUMBER -->
+            <TextView
+                android:id="@+id/textAccountNumberFrom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/kanit_regular"
+                android:text="036-8-xxx542"
+                android:textColor="@color/black"
+                android:textSize="35sp" />
+
+            <!-- TEXT BANK NAME -->
+            <TextView
+                android:id="@+id/textBankNameFrom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/kanit_regular"
+                android:text="ธนาคารกรุงเทพ"
+                android:textColor="@color/black"
+                android:textSize="35sp" />
+
+        </LinearLayout>
+        <!-- TEXT FROM LAYOUT -->
+
+    </LinearLayout>
+    <!-- END FROM -->
+
+    <!-- ICON ARROW DOWN-->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/arrow_down_yellow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutFrom" />
+
+    <!-- TO -->
+    <LinearLayout
+        android:id="@+id/layoutTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="60dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+        <!-- ICON FROM-->
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/shop_icon_yellow_bg" />
+
+        <!-- TEXT FROM LAYOUT -->
+        <LinearLayout
+            android:id="@+id/layoutTextTo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="@+id/view">
+
+            <!-- TEXT ACCOUNT NAME -->
+            <TextView
+                android:id="@+id/textAccountNameTo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/kanit_medium"
+                android:text="ไทเกอร์ แคชบอกซ์"
+                android:textColor="@color/black"
+                android:textSize="45sp" />
+
+            <!-- TEXT BANK NAME -->
+            <TextView
+                android:id="@+id/textBankName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/kanit_regular"
+                android:text="ธนาคารไทยพาณิชย์"
+                android:textColor="@color/black"
+                android:textSize="35sp" />
+
+        </LinearLayout>
+        <!-- TEXT FROM LAYOUT -->
+
+    </LinearLayout>
+    <!-- END FROM -->
+
+    <!-- MONEY -->
+    <RelativeLayout
+        android:id="@+id/moneyLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutTo"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/bg_amount_gray"
+        android:paddingStart="20dp"
+        android:paddingTop="15dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutTo">
+
+        <!-- TEXT -->
+        <TextView
+            android:id="@+id/moneyText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/kanit_medium"
+            android:text="รวมทั้งสิ้น"
+            android:textColor="@color/black"
+            android:textSize="45sp" />
+
+        <!-- TEXT -->
+        <TextView
+            android:id="@+id/moneyText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@+id/moneyText3"
+            android:fontFamily="@font/kanit_medium"
+            android:text="฿"
+            android:textColor="@color/black"
+            android:textSize="45sp" />
+
+        <!-- TEXT -->
+        <TextView
+            android:id="@+id/moneyText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="0dp"
+            android:fontFamily="@font/kanit_medium"
+            android:text="1,315"
+            android:textColor="@color/black"
+            android:textSize="45sp" />
+    </RelativeLayout>
+    <!-- END MONEY TOTAL -->
+
+    <!-- FEE -->
+    <RelativeLayout
+        android:id="@+id/moneyFee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/moneyLayout"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:paddingStart="20dp"
+        android:paddingTop="15dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="15dp"
+        android:background="@drawable/bg_fee_gray"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/moneyLayout">
+
+        <!-- TEXT -->
+        <TextView
+            android:id="@+id/moneyDropText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/kanit_medium"
+            android:text="ค่าธรรมเนียม"
+            android:textColor="@color/black"
+            android:textSize="45sp" />
+
+        <!-- TEXT -->
+        <TextView
+            android:id="@+id/moneyDropText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@+id/moneyDropText3"
+            android:fontFamily="@font/kanit_medium"
+            android:text="฿"
+            android:textColor="@color/black"
+            android:textSize="45sp" />
+
+        <!-- TEXT -->
+        <TextView
+            android:id="@+id/moneyDropText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="0dp"
+            android:fontFamily="@font/kanit_medium"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="45sp" />
+    </RelativeLayout>
+    <!-- END FEE -->
+
+    <!-- MONEY TOTAL -->
+    <RelativeLayout
+        android:id="@+id/moneyTotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutTo"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/bg_total_darkgrey"
+        android:paddingStart="20dp"
+        android:paddingTop="15dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/moneyFee">
+
+        <!-- TEXT -->
+        <TextView
+            android:id="@+id/moneyTotalText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/kanit_medium"
+            android:text="รวมทั้งสิ้น"
+            android:textColor="@color/black"
+            android:textSize="45sp" />
+
+        <!-- TEXT -->
+        <TextView
+            android:id="@+id/moneyTotalText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@+id/moneyTotalText3"
+            android:fontFamily="@font/kanit_medium"
+            android:text="฿"
+            android:textColor="@color/black"
+            android:textSize="45sp" />
+
+        <!-- TEXT -->
+        <TextView
+            android:id="@+id/moneyTotalText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="0dp"
+            android:fontFamily="@font/kanit_medium"
+            android:text="1,315"
+            android:textColor="@color/black"
+            android:textSize="45sp" />
+    </RelativeLayout>
+    <!-- END MONEY TOTAL -->
+
+    <!-- CLOSE BUTTON -->
+    <Button
+        android:id="@+id/buttonClose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_button_yellow"
+        android:fontFamily="@font/kanit_regular"
+        android:padding="25dp"
+        android:stateListAnimator="@null"
+        android:text="ปิด (5)"
+        android:textColor="@color/black"
+        android:textSize="45dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

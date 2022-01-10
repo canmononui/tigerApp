@@ -756,88 +756,75 @@
         android:background="@drawable/bg_white"
         app:layout_constraintTop_toBottomOf="@+id/banknoteAndCoin" />
 
-        <TextView
-            android:id="@+id/textTop"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:layout_marginStart="20dp"
-            android:fontFamily="@font/kanit_medium"
-            android:text="รายการเงินทำบุญ"
-            android:textColor="@color/black"
-            android:textSize="45sp"
-            app:layout_constraintStart_toStartOf="@+id/view"
-            app:layout_constraintTop_toTopOf="@+id/view" />
-
-
-        <!-- MONEY AMOUNT -->
-        <RelativeLayout
-            android:id="@+id/moneyAmount"
+        <!-- TOP DES -->
+        <LinearLayout
+            android:id="@+id/layoutTopDes"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/textTop"
-            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
             android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
             android:layout_marginEnd="20dp"
-            android:paddingStart="20dp"
-            android:paddingTop="15dp"
-            android:paddingEnd="20dp"
-            android:paddingBottom="15dp"
-            android:background="@drawable/bg_amount_gray"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textTop">
+            app:layout_constraintTop_toTopOf="@+id/view">
 
-            <!-- TEXT -->
+            <!-- TEXT TOP -->
             <TextView
-                android:id="@+id/moneyAmountText1"
+                android:id="@+id/textTop"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/kanit_medium"
-                android:text="ยอดเงินทำบุญ"
+                android:text="รายการเงินทำบุญ"
                 android:textColor="@color/black"
-                android:textSize="45sp" />
+                android:textSize="45sp"/>
 
-            <!-- TEXT -->
-            <TextView
-                android:id="@+id/moneyAmountText2"
-                android:layout_width="wrap_content"
+            <!-- LAYOUT RIGHT -->
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="10dp"
-                android:layout_toStartOf="@+id/moneyAmountText3"
-                android:fontFamily="@font/kanit_medium"
-                android:text="฿"
-                android:textColor="@color/black"
-                android:textSize="45sp" />
+                android:gravity="center_vertical|end"
+                android:orientation="horizontal">
 
-            <!-- TEXT -->
-            <TextView
-                android:id="@+id/moneyAmountText3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_marginEnd="0dp"
-                android:fontFamily="@font/kanit_medium"
-                android:text="1,315"
-                android:textColor="@color/black"
-                android:textSize="45sp" />
-        </RelativeLayout>
-        <!-- MONEY AMOUNT -->
+                <!-- DROP MONEY BUTTON -->
+                <Button
+                    android:id="@+id/buttonDropMoney"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_button_white"
+                    android:fontFamily="@font/kanit_regular"
+                    android:drawableStart="@drawable/qr_icon_button"
+                    android:drawablePadding="30dp"
+                    android:paddingStart="30dp"
+                    android:paddingTop="25dp"
+                    android:paddingEnd="30dp"
+                    android:paddingBottom="25dp"
+                    android:stateListAnimator="@null"
+                    android:text="สแกน QR"
+                    android:textColor="@color/black"
+                    android:textSize="45dp" />
+            </LinearLayout>
+            <!-- END LAYOUT RIGHT -->
+
+        </LinearLayout>
+        <!-- END TOP DES -->
+
 
         <!-- MONEY TOTAL -->
         <RelativeLayout
             android:id="@+id/moneyTotal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/moneyAmount"
+            android:layout_below="@+id/layoutTopDes"
             android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
             android:layout_marginEnd="20dp"
-            android:background="@drawable/bg_total_darkgrey"
+            android:background="@drawable/bg_money_total_darkgrey"
             android:paddingStart="20dp"
             android:paddingTop="15dp"
             android:paddingEnd="20dp"
             android:paddingBottom="15dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/moneyAmount">
+            app:layout_constraintTop_toBottomOf="@+id/layoutTopDes">
 
             <!-- TEXT -->
             <TextView
@@ -869,7 +856,7 @@
                 android:layout_alignParentEnd="true"
                 android:layout_marginEnd="0dp"
                 android:fontFamily="@font/kanit_medium"
-                android:text="1,315"
+                android:text="0"
                 android:textColor="@color/black"
                 android:textSize="45sp" />
         </RelativeLayout>
@@ -918,9 +905,5 @@
 
         </LinearLayout>
         <!-- END LAYOUT BUTTON -->
-
-
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

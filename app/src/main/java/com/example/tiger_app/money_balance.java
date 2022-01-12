@@ -62,7 +62,7 @@ public class money_balance extends AppCompatActivity {
         popupStart.show();
     }
 
-    // FUNC POPUP SUBMIT
+    // FUNC POPUP SUBMITs
     private void openAlertSubmit() {
         // SET DIALOG POPUP
         popupSubmit.setContentView(R.layout.alert_popup_submit);

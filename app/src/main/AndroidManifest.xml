@@ -29,9 +29,11 @@
         <activity
             android:name=".input_phone_number"
             android:exported="false" />
+
         <activity
             android:name=".money_balance"
             android:exported="false" />
+
         <activity
             android:name=".finish_loading"
             android:exported="false" />
